@@ -11,7 +11,7 @@ class InteractiveRecord
     #hash of columns names
     #return them as a an array of strings
     column_names = []
-    #DB[:conn].results_as_hash = true #not sure that this is needed since it is in the environment file
+    #DB[:conn].results_as_hash = true 
 
     sql = "PRAGMA table_info('#{table_name}')" #give you the hash of info
     table_info = DB[:conn].execute(sql)
